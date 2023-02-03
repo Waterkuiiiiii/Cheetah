@@ -1,0 +1,943 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HotkeyListener</name>
+    </assembly>
+    <members>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader">
+            <summary>
+                This class can be used to retrieve the currently selected text (if any) from an active control
+                in the active window. It does this by trying several methods internally.
+            </summary>
+            <remarks>
+                <para>
+                    The last method tried, when all other methods have failed, is sending a CTRL+C (using
+                    <see cref="T:System.Windows.Forms.SendKeys"/>) to the active window; this causes several side-effects which,
+                    unfortunately, don't seem to be easy to workaround. These side-effects are:
+                </para>
+                <para>
+                    1: Obviously, the clipboard is used. This means that the clipboard will be cleared
+                    afterwards (NOTE: only if all the other methods failed). Apart from the clipboard issues,
+                    the solution in itself is ofcourse horrible: we're using a global fix for a local problem.
+                    Unfortunately, applications like Chrome and many others, do not support the other methods
+                    of retrieving selected text and thus there is no other way to get to the selection the user
+                    is interested in than to use the clipboard.
+                </para>
+                <para>
+                    2: Console-applications can be terminated (CTRL+C = break) and other applications might
+                    behave in even other ways depending on how they react to CTRL+C.
+                </para>
+                <para>
+                    Before the clipboard is used, however, other methods like the preferred Automation UI
+                    method and SendMessage with WM_GETTEXT are tried first.
+                </para>
+            </remarks>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader.TryGetSelectedTextFromActiveControl">
+            <summary>
+            Tries to get the currently selected text from the active control.
+            </summary>
+            <returns>
+                Returns the currently selected text from the active control or null when all methods
+                of retrieving the currently selected text from the active control failed.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader.TryGetSelectedTextFromActiveControl``1(System.Func{System.String,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Tries to get the currently selected text from the active control and applies a filter to it.
+            </summary>
+            <typeparam name="T">The type of objects returned in an IEnumerable.</typeparam>
+            <param name="filter">The filter to apply to the text retrieved before returning the results.</param>
+            <returns>
+                Returns the filtered results from the currently selected text from the active control or an
+                empty IEnumerable of T when all methods of retrieving the currently selected text from the
+                active control failed.
+            </returns>
+            <remarks>
+                The result of the first filter that returns at least one result of T will be returned, other
+                methods will not be used after this. When a filter returns an empty IEnumerable (even though
+                the method did actually retrieve selected text from the active control) the next method
+                will be tried.
+            </remarks>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader.GetTextViaClipboard">
+            <summary>
+            Uses the clipboard to try and retrieve selected text from the active control.
+            </summary>
+            <returns>
+            Returns the selected text from the active control or null when the Clipboard method
+            fails to retrieve the text.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader.GetTextFromAutomationElement">
+            <summary>
+            Uses UIAutomation to try and retrieve selected text from the active control.
+            </summary>
+            <returns>
+            Returns the selected text from the active control or null when UIAutomation
+            fails to retrieve the text.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.TextSelectionReader.GetTextFromWin32Api">
+            <summary>
+            Uses P/Invokes to try and retrieve selected text from the active control.
+            </summary>
+            <returns>
+            Returns the selected text from the active control or null when the API calls
+            fail to retrieve the text.
+            </returns>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes">
+            <summary>
+            Gathers the list of application attributes 
+            derived from the currently active application.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes.GetID">
+            <summary>
+            Gets the source application's process ID.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes.GetHandle">
+            <summary>
+            Gets the source application's Window Handle.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes.GetName">
+            <summary>
+            Gets the source application's executable name.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes.GetPath">
+            <summary>
+            Gets the source application's executable path.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes.GetTitle">
+            <summary>
+            Gets the source application's window title text.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.SourceAttributes.GetSelection">
+            <summary>
+            Gets the currently selected text in the active application.
+            </summary>
+            <returns>The selected text, if any.</returns>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle">
+            <summary>
+            Provides the base Hotkey handle for intercepting 
+            and receiving all registered global Hotkey events.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.AddKey(System.String)">
+            <summary>
+            Adds a Hotkey to the global Key watcher.
+            </summary>
+            <param name="hotkey">The Hotkey string.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.RemoveKey(System.String)">
+            <summary>
+            Removes any specified Hotkey from the global Key watcher.
+            </summary>
+            <param name="hotkey">The Hotkey to remove.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.RemoveAllKeys">
+            <summary>
+            Remove all the registered Hotkeys from the global Key watcher.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.Register(System.String)">
+            <summary>
+            Validates and registers any given Hotkey.
+            </summary>
+            <param name="hotkey">The Hotkey string.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.Unregister(System.String)">
+            <summary>
+            Unregisters any registered Hotkeys.
+            </summary>
+            <param name="hotkey">The registered Hotkey.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.Unregister">
+            <summary>
+            Unregisters all the registered Hotkeys.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Overrides the default window message processing 
+            to detect the registered Hotkeys when pressed.
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="E:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyHandle.HotkeyPressed">
+            <summary>
+            Raised whenever a registered Hotkey is pressed.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore">
+            <summary>
+            The core class that helps in the management  
+            of system-wide Hotkeys within applications.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers">
+            <summary>
+            Provides a list of supported Hotkey modifiers.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.None">
+            <summary>
+            Represents no key.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Alt">
+            <summary>
+            The <see cref="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Alt"/> modifier key.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Control">
+            <summary>
+            The <see cref="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Control"/> modifier key.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Shift">
+            <summary>
+            The <see cref="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Shift"/> modifier key.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Windows">
+            <summary>
+            The <see cref="F:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers.Windows"/> key.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.RegisterKey(System.Windows.Forms.Control,System.Int32,System.String)">
+            <summary>
+            Parses and registers any provided Hotkey.
+            </summary>
+            <param name="handle">A window handle for the Hotkey event receiver.</param>
+            <param name="hotkeyID">The global atom ID for the given Hotkey.</param>
+            <param name="strKey">The valid Hotkey.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.RegisterKey(System.Windows.Forms.Control,System.Int32,System.Windows.Forms.Keys)">
+            <summary>
+            Registers any provided Hotkey.
+            </summary>
+            <param name="handle">A window handle for the Hotkey event receiver.</param>
+            <param name="hotkeyID">The global atom ID for the given Hotkey.</param>
+            <param name="key">The valid Hotkey.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.UnregisterKey(System.Windows.Forms.Control,System.Int32)">
+            <summary>
+            Unregisters any already active Hotkey.
+            </summary>
+            <param name="handle">A window handle for the Hotkey event receiver.</param>
+            <param name="hotkeyID">A global atom ID for the given Hotkey.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.CheckModifier(System.Windows.Forms.Keys,System.Windows.Forms.Keys,WK.Libraries.HotkeyListenerNS.Helpers.HotkeyCore.HotKeyModifiers)">
+            <summary>
+            Checks whether a specified Hotkey modifier is 
+            available within a provided Hotkey.
+            </summary>
+            <param name="key">The key(s).</param>
+            <param name="keyModifier">The key modifier from <see cref="T:System.Windows.Forms.Keys"/> enumeration.</param>
+            <param name="hotkeyModifier">The Hotkey modifier.</param>
+            <returns>Matched Hotkeymodifier</returns>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.HotkeyListener">
+            <summary>
+            A library that provides support for registering and 
+            attaching events to global hotkeys in .NET applications.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.HotkeyListener.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyListener"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyListener"/> class.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeyListener.Suspended">
+            <summary>
+            Gets a value determining whether the 
+            hotkeys set have been suspended.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Add(WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Adds a hotkey to the global Key watcher.
+            </summary>
+            <param name="hotkey">The hotkey to add.</param>
+            <returns>
+            True if successful or false if not. 
+            Ensure you inform the user if the 
+            hotkey fails to be registered. This 
+            is mostly due to a hotkey being 
+            already in use by another application.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Add(WK.Libraries.HotkeyListenerNS.Hotkey[])">
+            <summary>
+            Adds a list of hotkeys to the global Key watcher.
+            </summary>
+            <param name="hotkeys">The hotkeys to add.</param>
+            <returns>
+            The list of hotkeys passed and their 
+            results when trying to register them.
+            Their results will each denote a true 
+            if successful or false if not. 
+            Ensure you inform the user if one 
+            hotkey fails to be registered. This 
+            is mostly due to a hotkey being 
+            already in use by another application.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Update(WK.Libraries.HotkeyListenerNS.Hotkey,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Updates an existing hotkey 
+            in the global Key watcher.
+            </summary>
+            <param name="currentHotkey">The hotkey to modify.</param>
+            <param name="newHotkey">The new hotkey to be set.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Update(WK.Libraries.HotkeyListenerNS.Hotkey@,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Updates an existing hotkey 
+            in the global Key watcher.
+            </summary>
+            <param name="currentHotkey">
+            A reference to the variable 
+            containing the hotkey to modify.
+            </param>
+            <param name="newHotkey">
+            The new hotkey to be set.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Update(WK.Libraries.HotkeyListenerNS.Hotkey@,WK.Libraries.HotkeyListenerNS.Hotkey@)">
+            <summary>
+            Updates an existing hotkey 
+            in the global Key watcher.
+            </summary>
+            <param name="currentHotkey">
+            A reference to the variable 
+            containing the hotkey to modify.
+            </param>
+            <param name="newHotkey">
+            A reference to the variable containing 
+            the new hotkey to be set.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Remove(WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Removes any specific hotkey 
+            from the global Key watcher.
+            </summary>
+            <param name="hotkey">The hotkey to remove.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Remove(WK.Libraries.HotkeyListenerNS.Hotkey[])">
+            <summary>
+            Removes a list of hotkeys from 
+            the global Key watcher.
+            </summary>
+            <param name="hotkeys">The hotkeys to remove.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.RemoveAll">
+            <summary>
+            Remove all the registered hotkeys 
+            from the global Key watcher.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Suspend">
+            <summary>
+            Suspends the hotkey(s) set 
+            in the global Key watcher.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Suspend(WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Suspends a specific hotkey set 
+            from the global Key watcher.
+            </summary>
+            <param name="hotkey">The hotkey to suspend.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.SuspendOn(System.Windows.Forms.Form,System.Action)">
+            <summary>
+            Suspends the hotkey(s) set whenever a particular Form is active. 
+            This is useful in Forms where the user requires modifying certain 
+            hotkeys without triggering them when active.
+            </summary>
+            <param name="form">
+            The Form to suspend listening to hotkeys when active.
+            </param>
+            <param name="onDeactivate">
+            The action to be called when the Form has been deactivated.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.SuspendOn(System.Windows.Forms.Form[],System.Action[])">
+            <summary>
+            Suspends the hotkey(s) set whenever a list of Forms are active. 
+            This is useful in Forms where the user requires modifying certain 
+            hotkeys without triggering them when active.
+            </summary>
+            <param name="forms">
+            The Forms to suspend listening to hotkeys when active.
+            </param>
+            <param name="onDeactivate">
+            The actions to be called respectively 
+            when each Form has been deactivated.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Resume">
+            <summary>
+            Resumes using the hotkey(s) that 
+            were set in the global Key watcher.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Resume(WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Resumes listening to a specific hotkey that 
+            was suspended from the global Key watcher.
+            </summary>
+            <param name="hotkey">The hotkey to resume using.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.ResumeOn(System.Windows.Forms.Form)">
+            <summary>
+            Releases a Form from suspending hotkeys when active.
+            </summary>
+            <param name="form">
+            The Form to resume to listening to hotkeys when active.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.ResumeOn(System.Windows.Forms.Form[])">
+            <summary>
+            Releases a list of Forms from suspending hotkeys when active.
+            </summary>
+            <param name="forms">
+            The Forms to resume to listening to hotkeys when active.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.GetSelection">
+            <summary>
+            [Special] Gets the currently selected text in the active application.
+            </summary>
+            <returns>The selected text, if any.</returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Convert(System.String)">
+            <summary>
+            [Special] Converts a hotkey string to its variant <see cref="T:WK.Libraries.HotkeyListenerNS.Hotkey"/> object.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Convert(WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            [Special] Converts keys or key combinations to their string types.
+            </summary>
+            <param name="hotkey">The hotkey to convert.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Add(System.String)">
+            <summary>
+            Adds a hotkey to the global Key watcher.
+            </summary>
+            <param name="hotkey">The hotkey to add.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Add(System.String[])">
+            <summary>
+            Adds a list of hotkeys to the global Key watcher.
+            </summary>
+            <param name="hotkeys">The hotkeys to add.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Update(System.String,System.String)">
+            <summary>
+            Updates an existing hotkey 
+            in the global Key watcher.
+            </summary>
+            <param name="currentHotkey">The hotkey to modify.</param>
+            <param name="newHotkey">The new hotkey to be set.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Update(System.String@,System.String)">
+            <summary>
+            Updates an existing hotkey 
+            in the global Key watcher.
+            </summary>
+            <param name="currentHotkey">
+            A reference to the variable 
+            containing the hotkey to modify.
+            </param>
+            <param name="newHotkey">
+            The new hotkey to be set.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Update(System.String@,System.String@)">
+            <summary>
+            Updates an existing hotkey 
+            in the global Key watcher.
+            </summary>
+            <param name="currentHotkey">
+            A reference to the variable 
+            containing the hotkey to modify.
+            </param>
+            <param name="newHotkey">
+            A reference to the variable containing 
+            the new hotkey to be set.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Remove(System.String)">
+            <summary>
+            Removes any specific hotkey 
+            from the global Key watcher.
+            </summary>
+            <param name="hotkey">The hotkey to remove.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.Remove(System.String[])">
+            <summary>
+            Removes a list of hotkeys from 
+            the global Key watcher.
+            </summary>
+            <param name="hotkeys">The hotkeys to remove.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.SetDefaults">
+            <summary>
+            Applies the library's default options and settings.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.AttachEvents">
+            <summary>
+            Attaches the major hotkey events 
+            to the Hotkey Listener.
+            </summary>
+        </member>
+        <member name="E:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyPressed">
+            <summary>
+            Raised whenever a registered Hotkey is pressed.
+            </summary>
+        </member>
+        <member name="E:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdated">
+            <summary>
+            Raised whenever a registered Hotkey has been updated.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyEventHandler">
+            <summary>
+            Represents the method that will handle a <see cref="E:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyPressed"/> 
+            event that has no event data.
+            </summary>
+            <param name="sender">The hotkey sender object.</param>
+            <param name="e">The <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs"/> data.</param>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdatedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdated"/> event.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdatedEventArgs.#ctor(WK.Libraries.HotkeyListenerNS.Hotkey,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Provides data for the <see cref="E:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdated"/> event.
+            </summary>
+            <param name="updatedHotkey">
+            The hotkey that has been updated.
+            </param>
+            <param name="newHotkey">
+            The hotkey's newly updated value.
+            </param>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdatedEventArgs.UpdatedHotkey">
+            <summary>
+            Gets the currently updated Hotkey.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyUpdatedEventArgs.NewHotkey">
+            <summary>
+            Gets the Hotkey's newly updated value.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.HotkeySelector">
+            <summary>
+            Provides support for enabling standard Windows controls 
+            and User controls to select hotkeys at runtime. 
+            Combined with the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyListener"/> class, 
+            you can easily enable the selection and registering of 
+            hotkeys for a seamless end-user experience.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeySelector"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeySelector"/> class.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeySelector.EmptyHotkeyText">
+            <summary>
+            Gets or sets the text to be displayed in a 
+            control when no hotkey has been set. 
+            (Preferred default text is "None")
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeySelector.InvalidHotkeyText">
+            <summary>
+            Gets or sets the text to be displayed in a control 
+            when an invalid or unsupported hotkey is pressed.
+            (Preferred default text is "(Unsupported)")
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Enable(System.Windows.Forms.Control)">
+            <summary>
+            Enables a control for hotkey selection and previewing.
+            This will make use of the control's Text property to 
+            preview the current hotkey selected.
+            </summary>
+            <param name="control">The control to enable.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Enable(System.Windows.Forms.Control,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Enables a control for hotkey selection and previewing.
+            This will make use of the control's Text property to 
+            preview the current hotkey selected.
+            </summary>
+            <param name="control">The control to enable.</param>
+            <param name="hotkey">Assign the default hotkey to be previewed in the control.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Disable(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Disables a control for hotkey selection and previewing.
+            </summary>
+            <param name="control">The control to disable.</param>
+            <param name="clearKeys">Clear the control's previewed keys?</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.IsEnabled(System.Windows.Forms.Control)">
+            <summary>
+            Gets a value indicating whether a specific 
+            control is enabled for hotkey selection.
+            </summary>
+            <param name="control">The control to determine.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Set(System.Windows.Forms.Control,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Sets a hotkey selection to be previewed in a control. 
+            Thsi does not automatically enable the control for 
+            hotkey selection. For this, please use the <see cref="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Enable(System.Windows.Forms.Control)"/> method.
+            </summary>
+            <param name="control">The control to set.</param>
+            <param name="hotkey">Provide a standard key or key combination string.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Set(System.Windows.Forms.Control,System.Windows.Forms.Keys,System.Windows.Forms.Keys)">
+            <summary>
+            Sets a hotkey selection to be previewed in a control. 
+            Thsi does not automatically enable the control for 
+            hotkey selection. For this, please use the <see cref="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Enable(System.Windows.Forms.Control)"/> method.
+            </summary>
+            <param name="control">The control to set.</param>
+            <param name="key">Provide a standard key selection.</param>
+            <param name="modifiers">Provide a modifier key selection.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Clear(System.Windows.Forms.Control)">
+            <summary>
+            Clears the currently previewed hotkey 
+            selection displayed in a control.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Reset(System.Windows.Forms.Control)">
+            <summary>
+            (Variant of the <see cref="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Clear(System.Windows.Forms.Control)"/> method) 
+            Clears the currently previewed hotkey 
+            selection displayed in a control.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Convert(WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            [Helper] Converts keys or key combinations to their string types.
+            </summary>
+            <param name="hotkey">The hotkey to convert.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.ResetModifiers">
+            <summary>
+            Resets the hotkey modifiers to their defaults.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.PopulateModifierLists">
+            <summary>
+            Populates the ArrayLists specifying disallowed Hotkeys 
+            such as Shift+A, Ctrl+Alt+4 (produces 'dollar' sign).
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Refresh(System.Windows.Forms.Control)">
+            <summary>
+            Refreshes the previewed hotkey combination displayed in a control.
+            </summary>
+            <param name="control">
+            The control providing hotkey selection.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Refresh(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Refreshes the previewed hotkey combination displayed in a control.
+            </summary>
+            <param name="control">
+            The control providing hotkey selection.
+            </param>
+            <param name="internalCall">
+            Specifies whether this function is 
+            called internally or by the user.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Fires when a key is pressed down. Here, we'll want to update the Text  
+            property to notify the user what key combination is currently pressed.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.OnKeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Fires when all keys are released. If the current hotkey isn't valid, reset it.
+            Otherwise, do nothing and keep the Text and hotkey as it was.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.OnKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            Prevents anything entered in Input controls from being displayed.
+            Without this, a "A" key press would appear as "aControl, Alt + A".
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.HotkeyListenerNS.HotkeySelector.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeySelector.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Hotkey">
+            <summary>
+            Creates a standard hotkey for 
+            use with <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyListener"/>.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Hotkey"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Hotkey"/> class.
+            </summary>
+            <param name="hotkey">
+            The hotkey in string format.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.#ctor(System.Windows.Forms.Keys)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Hotkey"/> class.
+            </summary>
+            <param name="keyCode">
+            The hotkey's keyboard code.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.#ctor(System.Windows.Forms.Keys,System.Windows.Forms.Keys)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Hotkey"/> class.
+            </summary>
+            <param name="modifiers">
+            The hotkey's modifier flags. The flags indicate which 
+            combination of CTRL, SHIFT, and ALT keys will be detected.
+            </param>
+            <param name="keyCode">
+            The hotkey's keyboard code.
+            </param>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Hotkey.KeyCode">
+            <summary>
+            Gets or sets the hotkey's keyboard code.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Hotkey.Modifiers">
+            <summary>
+            Gets or sets the hotkey's modifier flags. The flags indicate 
+            which combination of CTRL, SHIFT, and ALT keys will be detected.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Hotkey.Suspended">
+            <summary>
+            Determines whether this hotkey 
+            has been suspended from use.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.ToString">
+            <summary>
+            Returns a string conversion containing the Hotkey's 
+            <see cref="P:WK.Libraries.HotkeyListenerNS.Hotkey.KeyCode"/> and <see cref="P:WK.Libraries.HotkeyListenerNS.Hotkey.Modifiers"/> keys.
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.GetHashCode">
+            <summary>
+            Serves as the default hash function.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to the current object.
+            </summary>
+            <param name="obj">
+            The object to compare with the current object.
+            </param>
+            <returns>
+            true if the specified object is equal to the current object; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.op_Equality(WK.Libraries.HotkeyListenerNS.Hotkey,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Overrides the system-default object equality operator 
+            for a customized Hotkey equality-check operator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Hotkey.op_Inequality(WK.Libraries.HotkeyListenerNS.Hotkey,WK.Libraries.HotkeyListenerNS.Hotkey)">
+            <summary>
+            Overrides the system-default object non-equality operator 
+            for a customized Hotkey non-equality-check operator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs">
+            <summary>
+            Provides data for the <see cref="E:WK.Libraries.HotkeyListenerNS.HotkeyListener.HotkeyPressed"/> event.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs.#ctor(WK.Libraries.HotkeyListenerNS.Models.SourceApplication)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs"/> class.
+            </summary>
+            <param name="source">
+            The source application from where 
+            the Hotkey was triggered.
+            </param>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs.Hotkey">
+            <summary>
+            Gets the hotkey that was pressed.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.HotkeyEventArgs.SourceApplication">
+            <summary>
+            Gets the details of the application 
+            from where the hotkey was pressed.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.StringExtensions">
+            <summary>
+            Extension to the <see cref="T:System.String"/> class 
+            to support non-case sensitive searches.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.StringExtensions.Contains(System.String,System.String,System.StringComparison)">
+            <summary>
+            Extended the <see cref="M:System.String.Contains(System.String)"/> 
+            method to allow non-case sensitive searches.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.HotkeyListenerNS.Models.SourceApplication">
+            <summary>
+            Saves details of the application from
+            where a particular Hotkey was triggered.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.#ctor(System.Int32,System.IntPtr,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.HotkeyListenerNS.Models.SourceApplication"/> class.
+            </summary>
+            <param name="id">The application's ID.</param>
+            <param name="handle">The application's handle.</param>
+            <param name="name">The application's name.</param>
+            <param name="title">The application's title.</param>
+            <param name="path">The application's path.</param>
+            <param name="selection">The selected text in the application.</param>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.ID">
+            <summary>
+            Gets the application's process-ID.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.Handle">
+            <summary>
+            Gets the appliation's window-handle.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.Name">
+            <summary>
+            Gets the application's name.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.Title">
+            <summary>
+            Gets the application's title-text.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.Path">
+            <summary>
+            Gets the application's absolute path.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.Selection">
+            <summary>
+            Gets the currently selected text in the application.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.HotkeyListenerNS.Models.SourceApplication.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> containing the list 
+            of application details provided.
+            </summary>
+        </member>
+    </members>
+</doc>
