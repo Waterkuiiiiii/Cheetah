@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ProcOpenLable = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CoinsTextBox = new System.Windows.Forms.TextBox();
-            this.SendCoinsButton = new System.Windows.Forms.Button();
-            this.CoinsCoutLabel = new System.Windows.Forms.Label();
-            this.CoinsCheckBox = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.SpeedScrollBar = new System.Windows.Forms.HScrollBar();
-            this.SpeedLabel = new System.Windows.Forms.Label();
-            this.SendSpeedButton = new System.Windows.Forms.Button();
-            this.SpeedTextBox = new System.Windows.Forms.TextBox();
-            this.SpeedCheckBox = new System.Windows.Forms.CheckBox();
+            this.ProcOpenLable = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.CoinsCoutLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.SpeedLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.CoinsTextBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.SendCoinsButton = new MaterialSkin.Controls.MaterialButton();
+            this.CoinsCheckBox = new MaterialSkin.Controls.MaterialCheckbox();
+            this.SpeedSlider = new MaterialSkin.Controls.MaterialSlider();
+            this.SpeedCheckBox = new MaterialSkin.Controls.MaterialCheckbox();
             this.SuspendLayout();
             // 
             // BGWorker
@@ -51,122 +49,170 @@
             this.BGWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.BGWorker_ProgressChanged);
             this.BGWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BGWorker_RunWorkerCompleted);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Process:";
-            // 
             // ProcOpenLable
             // 
             this.ProcOpenLable.AutoSize = true;
-            this.ProcOpenLable.Location = new System.Drawing.Point(55, 9);
+            this.ProcOpenLable.Depth = 0;
+            this.ProcOpenLable.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ProcOpenLable.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.ProcOpenLable.Location = new System.Drawing.Point(160, 76);
+            this.ProcOpenLable.MouseState = MaterialSkin.MouseState.HOVER;
             this.ProcOpenLable.Name = "ProcOpenLable";
-            this.ProcOpenLable.Size = new System.Drawing.Size(27, 13);
-            this.ProcOpenLable.TabIndex = 1;
+            this.ProcOpenLable.Size = new System.Drawing.Size(61, 41);
+            this.ProcOpenLable.TabIndex = 14;
             this.ProcOpenLable.Text = "N/A";
             // 
-            // label2
+            // materialLabel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Coins:";
-            // 
-            // CoinsTextBox
-            // 
-            this.CoinsTextBox.Location = new System.Drawing.Point(135, 36);
-            this.CoinsTextBox.Name = "CoinsTextBox";
-            this.CoinsTextBox.Size = new System.Drawing.Size(71, 20);
-            this.CoinsTextBox.TabIndex = 3;
-            // 
-            // SendCoinsButton
-            // 
-            this.SendCoinsButton.Location = new System.Drawing.Point(211, 35);
-            this.SendCoinsButton.Name = "SendCoinsButton";
-            this.SendCoinsButton.Size = new System.Drawing.Size(48, 23);
-            this.SendCoinsButton.TabIndex = 4;
-            this.SendCoinsButton.Text = "Send";
-            this.SendCoinsButton.UseVisualStyleBackColor = true;
-            this.SendCoinsButton.Click += new System.EventHandler(this.SendCoinsButton_Click);
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel2.Location = new System.Drawing.Point(36, 132);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(68, 29);
+            this.materialLabel2.TabIndex = 15;
+            this.materialLabel2.Text = "Coins:";
             // 
             // CoinsCoutLabel
             // 
             this.CoinsCoutLabel.AutoSize = true;
-            this.CoinsCoutLabel.Location = new System.Drawing.Point(55, 40);
+            this.CoinsCoutLabel.Depth = 0;
+            this.CoinsCoutLabel.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.CoinsCoutLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.CoinsCoutLabel.Location = new System.Drawing.Point(108, 132);
+            this.CoinsCoutLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.CoinsCoutLabel.Name = "CoinsCoutLabel";
-            this.CoinsCoutLabel.Size = new System.Drawing.Size(27, 13);
-            this.CoinsCoutLabel.TabIndex = 5;
+            this.CoinsCoutLabel.Size = new System.Drawing.Size(44, 29);
+            this.CoinsCoutLabel.TabIndex = 16;
             this.CoinsCoutLabel.Text = "N/A";
             // 
-            // CoinsCheckBox
+            // materialLabel3
             // 
-            this.CoinsCheckBox.AutoSize = true;
-            this.CoinsCheckBox.Location = new System.Drawing.Point(265, 40);
-            this.CoinsCheckBox.Name = "CoinsCheckBox";
-            this.CoinsCheckBox.Size = new System.Drawing.Size(58, 17);
-            this.CoinsCheckBox.TabIndex = 6;
-            this.CoinsCheckBox.Text = "Freeze";
-            this.CoinsCheckBox.UseVisualStyleBackColor = true;
-            this.CoinsCheckBox.CheckedChanged += new System.EventHandler(this.CoinsCheckBox_CheckedChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Speed:";
-            // 
-            // SpeedScrollBar
-            // 
-            this.SpeedScrollBar.LargeChange = 3;
-            this.SpeedScrollBar.Location = new System.Drawing.Point(259, 66);
-            this.SpeedScrollBar.Maximum = 29;
-            this.SpeedScrollBar.Name = "SpeedScrollBar";
-            this.SpeedScrollBar.Size = new System.Drawing.Size(104, 17);
-            this.SpeedScrollBar.TabIndex = 8;
-            this.SpeedScrollBar.Value = 1;
-            this.SpeedScrollBar.ValueChanged += new System.EventHandler(this.SpeedScrollBar_ValueChanged);
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel3.Location = new System.Drawing.Point(30, 193);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(74, 29);
+            this.materialLabel3.TabIndex = 17;
+            this.materialLabel3.Text = "Speed:";
             // 
             // SpeedLabel
             // 
             this.SpeedLabel.AutoSize = true;
-            this.SpeedLabel.Location = new System.Drawing.Point(60, 68);
+            this.SpeedLabel.Depth = 0;
+            this.SpeedLabel.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.SpeedLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.SpeedLabel.Location = new System.Drawing.Point(110, 194);
+            this.SpeedLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.SpeedLabel.Name = "SpeedLabel";
-            this.SpeedLabel.Size = new System.Drawing.Size(27, 13);
-            this.SpeedLabel.TabIndex = 9;
+            this.SpeedLabel.Size = new System.Drawing.Size(44, 29);
+            this.SpeedLabel.TabIndex = 18;
             this.SpeedLabel.Text = "N/A";
             // 
-            // SendSpeedButton
+            // materialLabel1
             // 
-            this.SendSpeedButton.Location = new System.Drawing.Point(211, 63);
-            this.SendSpeedButton.Name = "SendSpeedButton";
-            this.SendSpeedButton.Size = new System.Drawing.Size(48, 23);
-            this.SendSpeedButton.TabIndex = 11;
-            this.SendSpeedButton.Text = "Send";
-            this.SendSpeedButton.UseVisualStyleBackColor = true;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel1.Location = new System.Drawing.Point(21, 76);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(133, 41);
+            this.materialLabel1.TabIndex = 13;
+            this.materialLabel1.Text = "Process:";
             // 
-            // SpeedTextBox
+            // CoinsTextBox
             // 
-            this.SpeedTextBox.Location = new System.Drawing.Point(135, 64);
-            this.SpeedTextBox.Name = "SpeedTextBox";
-            this.SpeedTextBox.Size = new System.Drawing.Size(71, 20);
-            this.SpeedTextBox.TabIndex = 10;
+            this.CoinsTextBox.AnimateReadOnly = false;
+            this.CoinsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CoinsTextBox.Depth = 0;
+            this.CoinsTextBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.CoinsTextBox.Hint = "Coins Count";
+            this.CoinsTextBox.LeadingIcon = null;
+            this.CoinsTextBox.Location = new System.Drawing.Point(247, 120);
+            this.CoinsTextBox.MaxLength = 50;
+            this.CoinsTextBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.CoinsTextBox.Multiline = false;
+            this.CoinsTextBox.Name = "CoinsTextBox";
+            this.CoinsTextBox.Size = new System.Drawing.Size(152, 50);
+            this.CoinsTextBox.TabIndex = 19;
+            this.CoinsTextBox.Text = "";
+            this.CoinsTextBox.TrailingIcon = null;
+            this.CoinsTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CoinsTextBox_KeyDown);
+            // 
+            // SendCoinsButton
+            // 
+            this.SendCoinsButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SendCoinsButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.SendCoinsButton.Depth = 0;
+            this.SendCoinsButton.HighEmphasis = true;
+            this.SendCoinsButton.Icon = null;
+            this.SendCoinsButton.Location = new System.Drawing.Point(406, 130);
+            this.SendCoinsButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.SendCoinsButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SendCoinsButton.Name = "SendCoinsButton";
+            this.SendCoinsButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.SendCoinsButton.Size = new System.Drawing.Size(64, 36);
+            this.SendCoinsButton.TabIndex = 20;
+            this.SendCoinsButton.Text = "SEND";
+            this.SendCoinsButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.SendCoinsButton.UseAccentColor = false;
+            this.SendCoinsButton.UseVisualStyleBackColor = true;
+            this.SendCoinsButton.Click += new System.EventHandler(this.SendCoinsButton_Click);
+            // 
+            // CoinsCheckBox
+            // 
+            this.CoinsCheckBox.AutoSize = true;
+            this.CoinsCheckBox.Depth = 0;
+            this.CoinsCheckBox.Location = new System.Drawing.Point(474, 129);
+            this.CoinsCheckBox.Margin = new System.Windows.Forms.Padding(0);
+            this.CoinsCheckBox.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.CoinsCheckBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CoinsCheckBox.Name = "CoinsCheckBox";
+            this.CoinsCheckBox.ReadOnly = false;
+            this.CoinsCheckBox.Ripple = true;
+            this.CoinsCheckBox.Size = new System.Drawing.Size(81, 37);
+            this.CoinsCheckBox.TabIndex = 21;
+            this.CoinsCheckBox.Text = "Freeze";
+            this.CoinsCheckBox.UseVisualStyleBackColor = true;
+            this.CoinsCheckBox.CheckedChanged += new System.EventHandler(this.CoinsCheckBox_CheckedChanged);
+            // 
+            // SpeedSlider
+            // 
+            this.SpeedSlider.Depth = 0;
+            this.SpeedSlider.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.SpeedSlider.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.SpeedSlider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SpeedSlider.Location = new System.Drawing.Point(220, 188);
+            this.SpeedSlider.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SpeedSlider.Name = "SpeedSlider";
+            this.SpeedSlider.RangeMax = 30;
+            this.SpeedSlider.ShowText = false;
+            this.SpeedSlider.Size = new System.Drawing.Size(250, 40);
+            this.SpeedSlider.TabIndex = 24;
+            this.SpeedSlider.Text = "materialSlider1";
+            this.SpeedSlider.Value = 0;
+            this.SpeedSlider.onValueChanged += new MaterialSkin.Controls.MaterialSlider.ValueChanged(this.SpeedSlider_onValueChanged);
             // 
             // SpeedCheckBox
             // 
             this.SpeedCheckBox.AutoSize = true;
-            this.SpeedCheckBox.Location = new System.Drawing.Point(369, 68);
+            this.SpeedCheckBox.Depth = 0;
+            this.SpeedCheckBox.Location = new System.Drawing.Point(474, 189);
+            this.SpeedCheckBox.Margin = new System.Windows.Forms.Padding(0);
+            this.SpeedCheckBox.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.SpeedCheckBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.SpeedCheckBox.Name = "SpeedCheckBox";
-            this.SpeedCheckBox.Size = new System.Drawing.Size(59, 17);
-            this.SpeedCheckBox.TabIndex = 12;
+            this.SpeedCheckBox.ReadOnly = false;
+            this.SpeedCheckBox.Ripple = true;
+            this.SpeedCheckBox.Size = new System.Drawing.Size(83, 37);
+            this.SpeedCheckBox.TabIndex = 25;
             this.SpeedCheckBox.Text = "Enable";
             this.SpeedCheckBox.UseVisualStyleBackColor = true;
             // 
@@ -174,23 +220,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 340);
+            this.ClientSize = new System.Drawing.Size(574, 413);
             this.Controls.Add(this.SpeedCheckBox);
-            this.Controls.Add(this.SendSpeedButton);
-            this.Controls.Add(this.SpeedTextBox);
-            this.Controls.Add(this.SpeedLabel);
-            this.Controls.Add(this.SpeedScrollBar);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.SpeedSlider);
             this.Controls.Add(this.CoinsCheckBox);
-            this.Controls.Add(this.CoinsCoutLabel);
             this.Controls.Add(this.SendCoinsButton);
             this.Controls.Add(this.CoinsTextBox);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.SpeedLabel);
+            this.Controls.Add(this.materialLabel3);
+            this.Controls.Add(this.CoinsCoutLabel);
+            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.ProcOpenLable);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.materialLabel1);
             this.KeyPreview = true;
             this.Name = "MainForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kingdom Two Crowns Cheater";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
@@ -202,19 +247,17 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker BGWorker;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label ProcOpenLable;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox CoinsTextBox;
-        private System.Windows.Forms.Button SendCoinsButton;
-        private System.Windows.Forms.Label CoinsCoutLabel;
-        private System.Windows.Forms.CheckBox CoinsCheckBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.HScrollBar SpeedScrollBar;
-        private System.Windows.Forms.Label SpeedLabel;
-        private System.Windows.Forms.Button SendSpeedButton;
-        private System.Windows.Forms.TextBox SpeedTextBox;
-        private System.Windows.Forms.CheckBox SpeedCheckBox;
+        private MaterialSkin.Controls.MaterialLabel ProcOpenLable;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel CoinsCoutLabel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel SpeedLabel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialTextBox CoinsTextBox;
+        private MaterialSkin.Controls.MaterialButton SendCoinsButton;
+        private MaterialSkin.Controls.MaterialCheckbox CoinsCheckBox;
+        private MaterialSkin.Controls.MaterialSlider SpeedSlider;
+        private MaterialSkin.Controls.MaterialCheckbox SpeedCheckBox;
     }
 }
 

@@ -11,10 +11,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Memory;
 using WK.Libraries.HotkeyListenerNS;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace KingdomTwoCrownsCheater
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MaterialForm
     {
         Mem Mem = new Mem();
         bool IsOpenProc = false;
@@ -33,6 +35,11 @@ namespace KingdomTwoCrownsCheater
         public MainForm()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 
             HotkeyListener hkl = new HotkeyListener();
             hkl.HotkeyPressed += hkl_HotkeyPressed;
@@ -77,12 +84,11 @@ namespace KingdomTwoCrownsCheater
                 });
             }
         }
-        private void SpeedScrollBar_ValueChanged(object sender, EventArgs e)
+        private void SpeedSlider_onValueChanged(object sender, int newValue)
         {
             PlayerSpeedOffset = 10000000;
-            int speedScrollBarValue = SpeedScrollBar.Value / 10;
-            speedScrollBarValue++;
-            PlayerSpeedOffset *= speedScrollBarValue;
+            int speedSliderValue = SpeedSlider.Value / 10;
+            PlayerSpeedOffset *= speedSliderValue;
         }
 
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
@@ -132,16 +138,6 @@ namespace KingdomTwoCrownsCheater
             BGWorker.RunWorkerAsync();
         }
 
-        private void SendCoinsButton_Click(object sender, EventArgs e)
-        {
-            if (CoinsTextBox.Text == "")
-            {
-                return;
-            }
-
-            Mem.WriteMemory("GameAssembly.dll+01C0EABC,408,FC,DC,60,70,6C,34", "int", CoinsTextBox.Text);
-        }
-
         private void CoinsCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (!CoinsCheckBox.Checked)
@@ -158,6 +154,61 @@ namespace KingdomTwoCrownsCheater
                     Thread.Sleep(1);
                 }
             });
+        }
+
+        private void SendCoinsButton_Click(object sender, EventArgs e)
+        {
+            bool isDigital = false;
+            byte[] bytes = Encoding.ASCII.GetBytes(CoinsTextBox.Text);
+
+            foreach (var item in bytes)
+            {
+                if (item <= 57 && item >= 48)
+                {
+                    isDigital = true;
+                }
+                else
+                {
+                    isDigital = false;
+                    break;
+                }
+            }
+
+            if (CoinsTextBox.Text == "" || !isDigital)
+            {
+                return;
+            }
+
+            Mem.WriteMemory("GameAssembly.dll+01C0EABC,408,FC,DC,60,70,6C,34", "int", CoinsTextBox.Text);
+        }
+
+        private void CoinsTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool isDigital = false;
+            byte[] bytes = Encoding.ASCII.GetBytes(CoinsTextBox.Text);
+
+            foreach (var item in bytes)
+            {
+                if (item <= 57 && item >= 48)
+                {
+                    isDigital = true;
+                }
+                else
+                {
+                    isDigital = false;
+                    break;
+                }
+            }
+
+            if (CoinsTextBox.Text == "" || !isDigital)
+            {
+                return;
+            }
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                Mem.WriteMemory("GameAssembly.dll+01C0EABC,408,FC,DC,60,70,6C,34", "int", CoinsTextBox.Text);
+            }
         }
     }
 }
