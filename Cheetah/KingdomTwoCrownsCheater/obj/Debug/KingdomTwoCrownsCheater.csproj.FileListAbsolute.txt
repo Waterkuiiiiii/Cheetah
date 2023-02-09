@@ -57,3 +57,6 @@ D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\obj\Debug\KingdomTwoCrownsChea
 D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\obj\Debug\KingdomTwoCrownsCheater.exe
 D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\obj\Debug\KingdomTwoCrownsCheater.pdb
 D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\bin\Debug\MaterialSkin.dll
+D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\bin\Debug\zh-Hans\KingdomTwoCrownsCheater.resources.dll
+D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\obj\Debug\KingdomTwoCrownsCheater.MainForm.zh-Hans.resources
+D:\Code\VS\CSharp\Cheetah\KingdomTwoCrownsCheater\obj\Debug\zh-Hans\KingdomTwoCrownsCheater.resources.dll

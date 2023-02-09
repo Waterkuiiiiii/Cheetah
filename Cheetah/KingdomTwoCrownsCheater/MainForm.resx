@@ -117,7 +117,2025 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="BGWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="darkModeSwtich.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 199</value>
+  </data>
+  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="speedLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 171</value>
+  </data>
+  <data name="&gt;&gt;speedSlider1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialSlider, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton1.Name" xml:space="preserve">
+    <value>coinsSendButton1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialCard5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gemsSendButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="langComboBox.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="speedSlider2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="&gt;&gt;materialCard5.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="langComboBox.Items2" xml:space="preserve">
+    <value>中文</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="speedCheckBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="speedSlider1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="&gt;&gt;bgWorker.Name" xml:space="preserve">
+    <value>bgWorker</value>
+  </data>
+  <data name="materialLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 23</value>
+  </data>
+  <data name="langComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 49</value>
+  </data>
+  <data name="coinsTextBox1.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="materialLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="materialLabel7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;coinsSendButton1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="greenRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 37</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;speedLabel2.Name" xml:space="preserve">
+    <value>speedLabel2</value>
+  </data>
+  <data name="materialLabel13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="speedSlider1.Text" xml:space="preserve">
+    <value>materialSlider1</value>
+  </data>
+  <data name="coinsSendButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 36</value>
+  </data>
+  <data name="materialLabel5.Text" xml:space="preserve">
+    <value>Process:</value>
+  </data>
+  <data name="coinsTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 50</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Name" xml:space="preserve">
+    <value>materialLabel12</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 29</value>
+  </data>
+  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel14.Text" xml:space="preserve">
+    <value>When you activate speed checkbox, you can press "Z" key to left, "X" key to stop and "C" key to right in Player 1, and you can press "Del" key to left, "End" key to stop and "PgDn" key to right in Player 2.</value>
+  </data>
+  <data name="materialLabel15.Text" xml:space="preserve">
+    <value>if speed does not work in Player 1, try restarting the application.</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gemsTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsTextBox1.Hint" xml:space="preserve">
+    <value>Coins Count</value>
+  </data>
+  <data name="speedCheckBox1.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="materialLabel8.Text" xml:space="preserve">
+    <value>Coins:</value>
+  </data>
+  <data name="coinsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16px</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>699, 379</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="coinsCountLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialCard5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="darkModeSwtich.Text" xml:space="preserve">
+    <value>Dark Mode</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="materialLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 29</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="materialCard5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 231</value>
+  </data>
+  <data name="coinsSendButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 31</value>
+  </data>
+  <data name="&gt;&gt;speedSlider2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialSlider, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="coinsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="blueGreyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 37</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gemsCheckBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aboutButton.Text" xml:space="preserve">
+    <value>ABOUT ME</value>
+  </data>
+  <data name="langComboBox.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="langComboBox.Items" xml:space="preserve">
+    <value>(✿◡‿◡)</value>
+  </data>
+  <data name="coinsCountLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="&gt;&gt;coinsCheckBox2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="speedCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 167</value>
+  </data>
+  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 41</value>
+  </data>
+  <data name="&gt;&gt;darkModeSwtich.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialSwitch, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="speedCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 37</value>
+  </data>
+  <data name="&gt;&gt;redRadioButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="speedLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialCard3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
+    <value>materialLabel1</value>
+  </data>
+  <data name="speedSlider2.Text" xml:space="preserve">
+    <value>materialSlider1</value>
+  </data>
+  <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 17</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox1.Name" xml:space="preserve">
+    <value>gemsCheckBox1</value>
+  </data>
+  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="materialLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="blueGreyRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="coinsSendButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="procOpenLable2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pinkRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;speedSlider1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="gemsTextBox1.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="materialLabel11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 35</value>
+  </data>
+  <data name="blueGreyRadioButton.Text" xml:space="preserve">
+    <value>BlueGrey</value>
+  </data>
+  <data name="&gt;&gt;blueGreyRadioButton.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="redRadioButton.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="speedLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pinkRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 107</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="gemsSendButton2.Text" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="coinsCheckBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="gemsSendButton1.Text" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="speedSlider1.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="materialLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="speedLabel1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable1.Name" xml:space="preserve">
+    <value>procOpenLable1</value>
+  </data>
+  <data name="materialLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="gemsSendButton2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;redRadioButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gemsCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 103</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="gemsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16px</value>
+  </data>
+  <data name="gemsCountLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="materialLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14px</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="materialLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 208</value>
+  </data>
+  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 29</value>
+  </data>
+  <data name="&gt;&gt;darkModeSwtich.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Name" xml:space="preserve">
+    <value>materialLabel3</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>713, 481</value>
+  </data>
+  <data name="materialTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="blueRadioButton.Text" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Name" xml:space="preserve">
+    <value>materialLabel2</value>
+  </data>
+  <data name="materialTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 64</value>
+  </data>
+  <data name="coinsCountLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gemsTextBox2.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="coinsCountLabel2.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="gemsCheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="darkModeSwtich.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="blueRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="coinsCheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 31</value>
+  </data>
+  <data name="&gt;&gt;pinkRadioButton.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="speedCheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 167</value>
+  </data>
+  <data name="langComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14px, style=Bold</value>
+  </data>
+  <data name="speedCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialCard2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="procOpenLable2.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 34px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;blueRadioButton.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;blueRadioButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="aboutButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="procOpenLable2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 41</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel2.Name" xml:space="preserve">
+    <value>gemsCountLabel2</value>
+  </data>
+  <data name="materialLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 12</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="procOpenLable1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="speedCheckBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="gemsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel2.Name" xml:space="preserve">
+    <value>coinsCountLabel2</value>
+  </data>
+  <data name="&gt;&gt;speedLabel1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="gemsCountLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="greenRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="procOpenLable1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="&gt;&gt;coinsCheckBox2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="coinsTextBox1.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Player 1</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Name" xml:space="preserve">
+    <value>materialLabel9</value>
+  </data>
+  <data name="tabPage2.ImageKey" xml:space="preserve">
+    <value>SingleWoplayer.png</value>
+  </data>
+  <data name="speedSlider2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel7.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="materialCard5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;blueGreyRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="coinsCheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;coinsCheckBox1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;speedSlider1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="speedLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20px, style=Bold</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="materialLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialCard3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="coinsCheckBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="blueRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="speedCheckBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="materialCard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>593, 235</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gemsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 37</value>
+  </data>
+  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gemsSendButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="materialCard6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 310</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Name" xml:space="preserve">
+    <value>materialLabel10</value>
+  </data>
+  <data name="&gt;&gt;speedLabel2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="speedLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 29</value>
+  </data>
+  <data name="materialLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 41</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel1.Name" xml:space="preserve">
+    <value>coinsCountLabel1</value>
+  </data>
+  <data name="materialCard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="coinsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 17</value>
+  </data>
+  <data name="&gt;&gt;blueRadioButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;langComboBox.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialComboBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gemsCheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 103</value>
+  </data>
+  <data name="aboutButton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="speedSlider1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 165</value>
+  </data>
+  <data name="&gt;&gt;aboutButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.Parent" xml:space="preserve">
+    <value>materialCard6</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Name" xml:space="preserve">
+    <value>materialLabel13</value>
+  </data>
+  <data name="materialLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="coinsTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 50</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 29</value>
+  </data>
+  <data name="blueRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="speedSlider2.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="materialLabel6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsSendButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 36</value>
+  </data>
+  <data name="gemsTextBox2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsTextBox2.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="procOpenLable2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="materialLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 171</value>
+  </data>
+  <data name="materialLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="coinsCheckBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCheckBox2.Text" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="coinsSendButton1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 35</value>
+  </data>
+  <data name="gemsCheckBox1.Text" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="speedLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 171</value>
+  </data>
+  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="coinsSendButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="materialLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 12</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.Name" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;menuIconList.Name" xml:space="preserve">
+    <value>menuIconList</value>
+  </data>
+  <data name="gemsSendButton1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;speedSlider2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.Name" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="speedCheckBox1.ToolTip" xml:space="preserve">
+    <value>z key to left, x key to stop, c key to right when you checked</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox1.Name" xml:space="preserve">
+    <value>gemsTextBox1</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pinkRadioButton.Text" xml:space="preserve">
+    <value>Pink</value>
+  </data>
+  <data name="materialLabel5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;coinsCheckBox1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="darkModeSwtich.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pinkRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 37</value>
+  </data>
+  <data name="coinsSendButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 36</value>
+  </data>
+  <data name="materialLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 12</value>
+  </data>
+  <data name="gemsCheckBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="langComboBox.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="materialLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gemsCountLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;langComboBox.Name" xml:space="preserve">
+    <value>langComboBox</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="materialCard1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTabControl, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="speedCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 37</value>
+  </data>
+  <data name="&gt;&gt;coinsCheckBox2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox2.Name" xml:space="preserve">
+    <value>gemsTextBox2</value>
+  </data>
+  <data name="&gt;&gt;redRadioButton.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>707, 414</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialCard2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 81</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="materialLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gemsCheckBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gemsSendButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 103</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton2.Name" xml:space="preserve">
+    <value>coinsSendButton2</value>
+  </data>
+  <data name="&gt;&gt;aboutButton.Name" xml:space="preserve">
+    <value>aboutButton</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="darkModeSwtich.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="gemsCountLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;coinsCheckBox2.Name" xml:space="preserve">
+    <value>coinsCheckBox2</value>
+  </data>
+  <data name="blueGreyRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="speedCheckBox2.ToolTip" xml:space="preserve">
+    <value>del key to left, end key to stop, pgdn key to right when you checked</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialCard6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="materialCard4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 55</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="tabPage3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 50</value>
+  </data>
+  <data name="coinsSendButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialCard5.Name" xml:space="preserve">
+    <value>materialCard5</value>
+  </data>
+  <data name="materialLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 188</value>
+  </data>
+  <data name="&gt;&gt;speedSlider2.Name" xml:space="preserve">
+    <value>speedSlider2</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="aboutButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Name" xml:space="preserve">
+    <value>materialLabel11</value>
+  </data>
+  <data name="materialLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 107</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel10.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="materialCard6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox2.Name" xml:space="preserve">
+    <value>speedCheckBox2</value>
+  </data>
+  <data name="gemsCountLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;speedLabel1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;darkModeSwtich.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gemsTextBox1.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;speedSlider1.Name" xml:space="preserve">
+    <value>speedSlider1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Player 2</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="coinsSendButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="materialLabel6.Text" xml:space="preserve">
+    <value>Speed:</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gemsTextBox2.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="gemsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel9.Text" xml:space="preserve">
+    <value>Gems:</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Name" xml:space="preserve">
+    <value>materialLabel8</value>
+  </data>
+  <data name="materialCard2.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="redRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 14</value>
+  </data>
+  <data name="materialCard2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>593, 235</value>
+  </data>
+  <data name="speedLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel12.Text" xml:space="preserve">
+    <value>Version: 0.0.3</value>
+  </data>
+  <data name="coinsCheckBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedSlider1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="blueRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 88</value>
+  </data>
+  <data name="gemsCountLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="coinsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16px</value>
+  </data>
+  <data name="materialLabel11.Text" xml:space="preserve">
+    <value>Gems:</value>
+  </data>
+  <data name="greenRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 51</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tabPage3.ImageKey" xml:space="preserve">
+    <value>Gear.png</value>
+  </data>
+  <data name="materialLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="materialTabControl1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="procOpenLable2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 34px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;aboutButton.Parent" xml:space="preserve">
+    <value>materialCard5</value>
+  </data>
+  <data name="coinsTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="coinsCountLabel1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="speedLabel2.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="coinsCountLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 171</value>
+  </data>
+  <data name="&gt;&gt;materialCard5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="darkModeSwtich.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 29</value>
+  </data>
+  <data name="&gt;&gt;speedLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel13.Text" xml:space="preserve">
+    <value>Tips</value>
+  </data>
+  <data name="coinsCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox1.Name" xml:space="preserve">
+    <value>speedCheckBox1</value>
+  </data>
+  <data name="langComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 30</value>
+  </data>
+  <data name="coinsTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="speedSlider2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 165</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>699, 379</value>
+  </data>
+  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gemsCheckBox2.Name" xml:space="preserve">
+    <value>gemsCheckBox2</value>
+  </data>
+  <data name="&gt;&gt;aboutButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;greenRadioButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gemsTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 34px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="coinsSendButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 31</value>
+  </data>
+  <data name="coinsCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 31</value>
+  </data>
+  <data name="materialLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;redRadioButton.Name" xml:space="preserve">
+    <value>redRadioButton</value>
+  </data>
+  <data name="coinsTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 24</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox1.Name" xml:space="preserve">
+    <value>coinsTextBox1</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.Name" xml:space="preserve">
+    <value>materialCard4</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="coinsSendButton1.Text" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="&gt;&gt;speedLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialCard2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;greenRadioButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="materialLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 76</value>
+  </data>
+  <data name="coinsCountLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 106</value>
+  </data>
+  <data name="redRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="materialCard1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 81</value>
+  </data>
+  <data name="materialLabel1.Text" xml:space="preserve">
+    <value>Process:</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 14</value>
+  </data>
+  <data name="materialLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="blueRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 37</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Name" xml:space="preserve">
+    <value>materialLabel4</value>
+  </data>
+  <data name="&gt;&gt;greenRadioButton.Name" xml:space="preserve">
+    <value>greenRadioButton</value>
+  </data>
+  <data name="&gt;&gt;speedLabel1.Name" xml:space="preserve">
+    <value>speedLabel1</value>
+  </data>
+  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="redRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;procOpenLable2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialCard6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 55</value>
+  </data>
+  <data name="coinsCountLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialLabel4.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>699, 379</value>
+  </data>
+  <data name="gemsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 37</value>
+  </data>
+  <data name="materialLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="speedCheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="gemsTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 96</value>
+  </data>
+  <data name="speedLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="greenRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="coinsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 37</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="coinsCountLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gemsSendButton1.Name" xml:space="preserve">
+    <value>gemsSendButton1</value>
+  </data>
+  <data name="coinsCountLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="gemsCountLabel1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="langComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel15.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="aboutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 36</value>
+  </data>
+  <data name="coinsTextBox2.Hint" xml:space="preserve">
+    <value>Coins Count</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Name" xml:space="preserve">
+    <value>materialLabel5</value>
+  </data>
+  <data name="gemsSendButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Parent" xml:space="preserve">
+    <value>materialCard6</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable2.Name" xml:space="preserve">
+    <value>procOpenLable2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;speedSlider2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;coinsCountLabel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;coinsTextBox2.Name" xml:space="preserve">
+    <value>coinsTextBox2</value>
+  </data>
+  <data name="&gt;&gt;greenRadioButton.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="gemsCountLabel2.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="gemsSendButton2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Parent" xml:space="preserve">
+    <value>materialCard5</value>
+  </data>
+  <data name="coinsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 37</value>
+  </data>
+  <data name="gemsTextBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bgWorker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gemsSendButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="materialCard1.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.Name" xml:space="preserve">
+    <value>materialLabel15</value>
+  </data>
+  <data name="coinsTextBox2.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="gemsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 107</value>
+  </data>
+  <data name="&gt;&gt;materialCard5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="langComboBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedSlider1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCheckBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel7.Name" xml:space="preserve">
+    <value>materialLabel7</value>
+  </data>
+  <data name="redRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel3.Text" xml:space="preserve">
+    <value>Speed:</value>
+  </data>
+  <data name="materialLabel4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel6.Name" xml:space="preserve">
+    <value>materialLabel6</value>
+  </data>
+  <data name="langComboBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="coinsCheckBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;menuIconList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Kingdom Two Crowns Cheater</value>
+  </data>
+  <data name="greenRadioButton.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="coinsTextBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialCard1.Name" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="coinsTextBox2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 24</value>
+  </data>
+  <data name="materialCard6.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="procOpenLable1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 17</value>
+  </data>
+  <data name="materialCard5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 122</value>
+  </data>
+  <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gemsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16px</value>
+  </data>
+  <data name="procOpenLable1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 41</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="blueGreyRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="coinsCheckBox2.Text" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="gemsSendButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 103</value>
+  </data>
+  <data name="pinkRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;langComboBox.Parent" xml:space="preserve">
+    <value>materialCard4</value>
+  </data>
+  <data name="blueGreyRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="coinsTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard6.Name" xml:space="preserve">
+    <value>materialCard6</value>
+  </data>
+  <data name="gemsTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="materialLabel2.Text" xml:space="preserve">
+    <value>Coins:</value>
+  </data>
+  <data name="pinkRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialLabel14.Name" xml:space="preserve">
+    <value>materialLabel14</value>
+  </data>
+  <data name="materialLabel10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 222</value>
+  </data>
+  <data name="speedLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsSendButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 36</value>
+  </data>
+  <data name="materialCard4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;coinsCheckBox1.Name" xml:space="preserve">
+    <value>coinsCheckBox1</value>
+  </data>
+  <data name="gemsTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 96</value>
+  </data>
+  <data name="procOpenLable1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="materialCard2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedSlider2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="coinsSendButton2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="materialLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="aboutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 66</value>
+  </data>
+  <data name="darkModeSwtich.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 37</value>
+  </data>
+  <data name="&gt;&gt;blueRadioButton.Name" xml:space="preserve">
+    <value>blueRadioButton</value>
+  </data>
+  <data name="materialCard3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 55</value>
+  </data>
+  <data name="materialCard3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialLabel14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;blueGreyRadioButton.Name" xml:space="preserve">
+    <value>blueGreyRadioButton</value>
+  </data>
+  <data name="greenRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;pinkRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pinkRadioButton.Name" xml:space="preserve">
+    <value>pinkRadioButton</value>
+  </data>
+  <data name="&gt;&gt;procOpenLable1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gemsCountLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="blueGreyRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 162</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;pinkRadioButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;blueGreyRadioButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gemsSendButton2.Name" xml:space="preserve">
+    <value>gemsSendButton2</value>
+  </data>
+  <data name="materialLabel8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsSendButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;speedCheckBox2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="speedLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="coinsCheckBox1.Text" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="&gt;&gt;coinsCheckBox1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 24</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="redRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 37</value>
+  </data>
+  <data name="materialLabel12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialCard1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gemsCheckBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="menuIconList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAm
+        FQAAAk1TRnQBSQFMAgEBAwEAAZgBAQG4AQEBGAEAARgBAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFg
+        AwABGAMAAQEBAAEgBgABJBUAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB2AwAA1IBqAMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DQAFwMAADKgFAAwAB/wMAAf8DAAH/AwAB/4sAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DQAFwMAADKgFAAwAB/wMAAf8DAAH/AwAB/4sAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwHAADTAGQA1IBoAQAAxgBIANMAZADWwHQAwAB/wMA
+        Af8DAAH/AwAB/wNbAdADTAGQAxgBIAMMARADWwHQA0wBkHMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwGAADUgGgAwAB/wMAAf8DWwHQAwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAeADAAH/AwAB/wNSAaBvAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wNbAdAMAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0ABcBQAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNMAZBrAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wNbAdAMAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0ABcBQAA1IBoAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wM6
+        AWBoAANdAdwDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1oBxAwAA0UBfAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DKAE8GAADWwHQ
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wNWAbBsAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0kBiAwAAxcBHwMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNgAegYAAMY
+        ASADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWgHgA0ABcAMqAUADKgRAAXADWgHgAwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AxgBIGgAAxcBHwNdAfMDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNdAdwUAANbAdADAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNSAaAYAANM
+        AZADAAH/AwAB/wMAAf8DAAH/AwAB/wNSAaADDAEQEAADDAEQA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A0wBkGwAAzABSgNaAfIDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWgHyAygBPBQAAzABSgMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUQHzAxcBHxAAAyoBQAMqAUADWwHQAwAB/wMA
+        Af8DAAH/AwAB/wNaAeADDAEQGAADDAEQA1oB4AMAAf8DAAH/AwAB/wMAAf8DWwHQAyoBQAMqAUBoAAMw
+        AUoDYAHoAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wNbAdADKAE8CwAB/wMAAf8DAAH/A1IBqAQAA0YBfgMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1cB8gMwAUoEAANbAdgDAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/A0ABcCAAA0YBgAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf9wAANJ
+        AYgDWAG4A1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1UBrAM7
+        AWQTAAH/AwAB/wMAAf8DUgGgCAADOwFkA1gBuANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQ
+        A1gBuAMoATwIAANbAdADAAH/AwAB/wNdAdwDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AyoBQCAA
+        AyoBQAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf+EAANJAYgDWAG4A1sB0ANbAdADWAG4AzsBZCQA
+        A10B3AMAAf8DAAH/A1sB0BQAA0UBfANYAbgDWwHQA1sB0ANYAbgDOwFkFAADWwHQAwAB/wMAAf8DWwHQ
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMqAUAgAAMqAUADAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/fAADFwEfA10B3AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAcQDFwEfHAADWgHEAwAB/wMA
+        Af8DWwHQDAADFwEfA1sB0AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAcQDFwEfDAADYAHoAwAB/wMA
+        Af8DUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNAAXAgAANAAXADAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/eAADFwEfA1wB2QMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB0BwA
+        A0kBiAMAAf8DAAH/A2AB6AgAAxcBHwNcAdkDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNb
+        AdAPAAH/AwAB/wMAAf8DRQF8CAADWwHQAwAB/wMAAf8DAAH/AwAB/wNaAeADDAEQGAADDAEQA1oB4AMA
+        Af8DAAH/AwAB/wMAAf8DWwHQgAADUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wNJAYgYAAMXAR8DAAH/AwAB/wMAAf8IAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A0kBiAQAAzYBVwMAAf8DAAH/A08B9AwAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A1IBoAMMARAQAAMMARADUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DTAGQgAADUwH0AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNbAdAcAANYAbgDAAH/AwAB/wNAAXAEAANgAegDAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB0AQAA0kBiAMAAf8DAAH/A1IBoAwA
+        AxgBIAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAeADRgGAAyoBQAMqBEABcANaAeADAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DGAEggwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/HAADKAE8A1cB8gMAAf8DVQGsBwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/BAADWAG4AwAB/wNRAfMDFwEfDAADDAEQA1oB4AMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWwHQhwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IAADRgF+AwAB/wNgAegHAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DFwEfA1EB8wMAAf8DOwFkEAADWwHQ
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A1IBoIMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A10B3CQAA0ABcQNPAfQDTgGUA08B9AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DYAHoA1IBoANgAegDOwFkFAADTAGQAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0wBkIAAA1gBuAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUgGgLAADQAFwA1gBuAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DUgGgA0ABcCAAA1IBoAMAAf8DAAH/A1YBsAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWwHQAwAB/wMAAf8DUgGghAADKAE8A1oB8gMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A2EB5gMXAR8wAAMoATwDVwHyAwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DUQHzAxcBHygAA0wBkAM6AWAEAAMYASADTAGQA1sB0AMAAf8DAAH/AwAB/wMA
+        Af8DWwHQA0wBkAMYASAEAANSAaADTAGQjAADMAFKA1oB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNh
+        AeYDMAFKOAADMAFKA1cB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfMDMAFKQAADKgFAAwAB/wMA
+        Af8DAAH/AwAB/6gAAygBPANYAbgDUwH0AwAB/wMAAf8DYAHoA1IBoAMXAR9AAAMoATwDWAG4A2AB6AMA
+        Af8DAAH/A2AB6ANSAaADFwEfRAADKgFAAwAB/wMAAf8DAAH/AwAB/4gAAUIBTQE+BwABPgMAASgDAAFg
+        AwABGAMAAQEBAAEBBQABIAEBFgAD/wQAAeABAAEHAf8BgwH/BgAB4AEAAQcB/wGDAf8GAAHgAQABBwHy
+        AQABDwYAAeABAAEHAeABAAEHBgAB4AEAAQcBwAEAAQMGAAHgAQABBwHAAQABAwYAAeABAAEHAeABAAEH
+        BgAB4AEAAQ8BwAEAAQMFAAEBAfABAAEPAcABPAEDAwABgAEAAQEB8AEAAQ8BAAF+BAABwAEAAQMBCAEA
+        ARABAAH/BAAB8AEAAQ8BDAEAATABAAH/BAAB/wGBAf8BDwGBAfABAAH/BAAB/gEAAX8BDgEAAXABAAH/
+        BAAB/AEAAX8BDAEAAXABwAF+AQMDAAH8AQABPwEMAQABIQHAATwBAwMAAfwBAAE/AYQBAAEhAcABAAED
+        AwAB/AEAAT8BhAEAASEBwAEAAQcDAAH8AQABPwHEAQABAwHAAQABAwMAAfwBAAE/AeABAAEHAcABAAED
+        AwAB/AEAAT8B+AEAAR8B4AEAAQcDAAH8AQABPwH8AQABPwHyAQABTwMAAf4BAAF/Af4BAAF/Af8BgwH/
+        AwAB/wEAAv8BAAL/AYMB/xkACw==
+</value>
+  </data>
+  <data name="materialCard6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="coinsSendButton2.Text" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="speedLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="materialLabel15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="speedCheckBox2.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="procOpenLable1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 250</value>
+  </data>
+  <data name="gemsCountLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="gemsCheckBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="materialLabel12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 29</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="coinsCheckBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="gemsTextBox2.Hint" xml:space="preserve">
+    <value>Gems Count</value>
+  </data>
+  <data name="materialCard6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;langComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gemsCountLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;speedLabel2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 50</value>
+  </data>
+  <data name="&gt;&gt;coinsSendButton2.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="blueRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="procOpenLable2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gemsCountLabel1.Name" xml:space="preserve">
+    <value>gemsCountLabel1</value>
+  </data>
+  <data name="&gt;&gt;gemsTextBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;darkModeSwtich.Name" xml:space="preserve">
+    <value>darkModeSwtich</value>
+  </data>
+  <data name="gemsSendButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="materialCard4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="greenRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;materialCard6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14px</value>
+  </data>
+  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 35</value>
+  </data>
+  <data name="procOpenLable1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 34px, style=Bold</value>
+  </data>
+  <data name="procOpenLable2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 17</value>
+  </data>
+  <data name="tabPage2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;materialCard6.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Name" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="aboutButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="redRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gemsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 107</value>
+  </data>
+  <data name="tabPage1.ImageKey" xml:space="preserve">
+    <value>singlePlayer.png</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="coinsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 35</value>
+  </data>
+  <data name="pinkRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 125</value>
+  </data>
+  <data name="materialLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="materialLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="coinsSendButton2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsTextBox1.Hint" xml:space="preserve">
+    <value>Gems Count</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <metadata name="bgWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="menuIconList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>214, 17</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>124, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

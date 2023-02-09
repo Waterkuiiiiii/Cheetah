@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="speedCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="speedCheckBox1.Text" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="speedCheckBox1.ToolTip" xml:space="preserve">
+    <value>当你选中时，z键向左，x键停止，c键向右。</value>
+  </data>
+  <data name="speedCheckBox2.Text" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="speedCheckBox2.ToolTip" xml:space="preserve">
+    <value>当你选中时，del键向左，end键停止，pgdn键向右。</value>
+  </data>
+  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 41</value>
+  </data>
+  <data name="materialLabel1.Text" xml:space="preserve">
+    <value>进程：</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>玩家 1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>玩家 2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="menuIconList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAm
+        FQAAAk1TRnQBSQFMAgEBAwEAAeABAAHgAQABGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
+        AwABGAMAAQEBAAEgBgABJBUAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB2AwAA1IBqAMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DQAFwMAADKgFAAwAB/wMAAf8DAAH/AwAB/4sAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DQAFwMAADKgFAAwAB/wMAAf8DAAH/AwAB/4sAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwHAADTAGQA1IBoAQAAxgBIANMAZADWwHQAwAB/wMA
+        Af8DAAH/AwAB/wNbAdADTAGQAxgBIAMMARADWwHQA0wBkHMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwGAADUgGgAwAB/wMAAf8DWwHQAwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wNZAeADAAH/AwAB/wNSAaBvAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wNbAdAMAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0ABcBQAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNMAZBrAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wNbAdAMAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0ABcBQAA1IBoAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wM6
+        AWBoAANdAdwDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1oBxAwAA0UBfAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DKAE8GAADWwHQ
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wNWAbBsAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0kBiAwAAxcBHwMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNgAegYAAMY
+        ASADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWQHgA0ABcAMqAUADKgRAAXADWQHgAwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AxgBIGgAAxcBHwNcAfMDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNdAdwUAANbAdADAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNSAaAYAANM
+        AZADAAH/AwAB/wMAAf8DAAH/AwAB/wNSAaADDAEQEAADDAEQA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A0wBkGwAAzABSgNaAfIDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWgHyAygBPBQAAzABSgMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUAHzAxcBHxAAAyoBQAMqAUADWwHQAwAB/wMA
+        Af8DAAH/AwAB/wNZAeADDAEQGAADDAEQA1kB4AMAAf8DAAH/AwAB/wMAAf8DWwHQAyoBQAMqAUBoAAMw
+        AUoDYAHoAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wNbAdADKAE8CwAB/wMAAf8DAAH/A1IBqAQAA0YBfgMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1UB8gMwAUoEAANbAdgDAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/A0ABcCAAA0YBgAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf9wAANJ
+        AYgDWAG4A1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1UBrAM7
+        AWQTAAH/AwAB/wMAAf8DUgGgCAADOwFkA1gBuANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQ
+        A1gBuAMoATwIAANbAdADAAH/AwAB/wNdAdwDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AyoBQCAA
+        AyoBQAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf+EAANJAYgDWAG4A1sB0ANbAdADWAG4AzsBZCQA
+        A10B3AMAAf8DAAH/A1sB0BQAA0UBfANYAbgDWwHQA1sB0ANYAbgDOwFkFAADWwHQAwAB/wMAAf8DWwHQ
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMqAUAgAAMqAUADAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/fAADFwEfA10B3AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAcQDFwEfHAADWgHEAwAB/wMA
+        Af8DWwHQDAADFwEfA1sB0AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAcQDFwEfDAADYAHoAwAB/wMA
+        Af8DUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNAAXAgAANAAXADAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/eAADFwEfA1wB2QMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB0BwA
+        A0kBiAMAAf8DAAH/A2AB6AgAAxcBHwNcAdkDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNb
+        AdAPAAH/AwAB/wMAAf8DRQF8CAADWwHQAwAB/wMAAf8DAAH/AwAB/wNZAeADDAEQGAADDAEQA1kB4AMA
+        Af8DAAH/AwAB/wMAAf8DWwHQgAADUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wNJAYgYAAMXAR8DAAH/AwAB/wMAAf8IAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A0kBiAQAAzYBVwMAAf8DAAH/A00B9AwAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A1IBoAMMARAQAAMMARADUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DTAGQgAADUwH0AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNbAdAcAANYAbgDAAH/AwAB/wNAAXAEAANgAegDAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB0AQAA0kBiAMAAf8DAAH/A1IBoAwA
+        AxgBIAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNZAeADRgGAAyoBQAMqBEABcANZAeADAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DGAEggwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/HAADKAE8A1UB8gMAAf8DVQGsBwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/BAADWAG4AwAB/wNQAfMDFwEfDAADDAEQA1kB4AMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWwHQhwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IAADRgF+AwAB/wNgAegHAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DFwEfA1AB8wMAAf8DOwFkEAADWwHQ
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A1IBoIMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        A10B3CQAA0ABcQNNAfQDTgGUA00B9AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DYAHoA1IBoANgAegDOwFkFAADTAGQAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0wBkIAAA1gBuAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUgGgLAADQAFwA1gBuAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DUgGgA0ABcCAAA1IBoAMAAf8DAAH/A1YBsAMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWwHQAwAB/wMAAf8DUgGghAADKAE8A1oB8gMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A2EB5gMXAR8wAAMoATwDVQHyAwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DUAHzAxcBHygAA0wBkAM6AWAEAAMYASADTAGQA1sB0AMAAf8DAAH/AwAB/wMA
+        Af8DWwHQA0wBkAMYASAEAANSAaADTAGQjAADMAFKA1oB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNh
+        AeYDMAFKOAADMAFKA1UB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNQAfMDMAFKQAADKgFAAwAB/wMA
+        Af8DAAH/AwAB/6gAAygBPANYAbgDUwH0AwAB/wMAAf8DYAHoA1IBoAMXAR9AAAMoATwDWAG4A2AB6AMA
+        Af8DAAH/A2AB6ANSAaADFwEfRAADKgFAAwAB/wMAAf8DAAH/AwAB/4gAAUIBTQE+BwABPgMAASgDAAFg
+        AwABGAMAAQEBAAEBBQABIAEBFgAD/wQAAeABAAEHAf8BgwH/BgAB4AEAAQcB/wGDAf8GAAHgAQABBwHy
+        AQABDwYAAeABAAEHAeABAAEHBgAB4AEAAQcBwAEAAQMGAAHgAQABBwHAAQABAwYAAeABAAEHAeABAAEH
+        BgAB4AEAAQ8BwAEAAQMFAAEBAfABAAEPAcABPAEDAwABgAEAAQEB8AEAAQ8BAAF+BAABwAEAAQMBCAEA
+        ARABAAH/BAAB8AEAAQ8BDAEAATABAAH/BAAB/wGBAf8BDwGBAfABAAH/BAAB/gEAAX8BDgEAAXABAAH/
+        BAAB/AEAAX8BDAEAAXABwAF+AQMDAAH8AQABPwEMAQABIQHAATwBAwMAAfwBAAE/AYQBAAEhAcABAAED
+        AwAB/AEAAT8BhAEAASEBwAEAAQcDAAH8AQABPwHEAQABAwHAAQABAwMAAfwBAAE/AeABAAEHAcABAAED
+        AwAB/AEAAT8B+AEAAR8B4AEAAQcDAAH8AQABPwH8AQABPwHyAQABTwMAAf4BAAF/Af4BAAF/Af8BgwH/
+        AwAB/wEAAv8BAAL/AYMB/wMACw==
+</value>
+  </data>
+  <data name="gemsSendButton1.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="gemsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="gemsCheckBox1.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel2.Text" xml:space="preserve">
+    <value>金币：</value>
+  </data>
+  <data name="coinsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="coinsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 35</value>
+  </data>
+  <data name="gemsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="gemsTextBox1.Hint" xml:space="preserve">
+    <value>宝石数量</value>
+  </data>
+  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel3.Text" xml:space="preserve">
+    <value>速度：</value>
+  </data>
+  <data name="gemsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="gemsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 107</value>
+  </data>
+  <data name="speedLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="speedLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 171</value>
+  </data>
+  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel11.Text" xml:space="preserve">
+    <value>宝石：</value>
+  </data>
+  <data name="coinsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="coinsTextBox1.Hint" xml:space="preserve">
+    <value>金币数量</value>
+  </data>
+  <data name="coinsSendButton1.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="speedSlider1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="coinsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="coinsCheckBox1.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="procOpenLable1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <data name="procOpenLable1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel8.Text" xml:space="preserve">
+    <value>金币：</value>
+  </data>
+  <data name="coinsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="coinsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 35</value>
+  </data>
+  <data name="speedSlider2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel6.Text" xml:space="preserve">
+    <value>速度：</value>
+  </data>
+  <data name="gemsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="gemsCheckBox2.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="speedLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="speedLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 171</value>
+  </data>
+  <data name="gemsSendButton2.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="coinsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="coinsTextBox2.Hint" xml:space="preserve">
+    <value>金币数量</value>
+  </data>
+  <data name="gemsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="gemsTextBox2.Hint" xml:space="preserve">
+    <value>宝石数量</value>
+  </data>
+  <data name="coinsSendButton2.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="gemsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="gemsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 107</value>
+  </data>
+  <data name="coinsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="coinsCheckBox2.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel9.Text" xml:space="preserve">
+    <value>宝石：</value>
+  </data>
+  <data name="procOpenLable2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <data name="procOpenLable2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <data name="materialLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 41</value>
+  </data>
+  <data name="materialLabel5.Text" xml:space="preserve">
+    <value>进程：</value>
+  </data>
+  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel13.Text" xml:space="preserve">
+    <value>技巧</value>
+  </data>
+  <data name="materialLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 162</value>
+  </data>
+  <data name="materialLabel15.Text" xml:space="preserve">
+    <value>如果玩家1的速度无法使用，请尝试重启软件。</value>
+  </data>
+  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 125</value>
+  </data>
+  <data name="materialLabel14.Text" xml:space="preserve">
+    <value>当你在玩家1中激活速度检查框时，Z键向左，X键停止，C键向右。如果选中玩家2，Del键向左，End键停止，PgDn键向右。</value>
+  </data>
+  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel10.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="aboutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 36</value>
+  </data>
+  <data name="aboutButton.Text" xml:space="preserve">
+    <value>关于我</value>
+  </data>
+  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 20px, style=Bold</value>
+  </data>
+  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="materialLabel12.Text" xml:space="preserve">
+    <value>版本：0.0.3</value>
+  </data>
+  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel7.Text" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel4.Text" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="blueGreyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 37</value>
+  </data>
+  <data name="blueGreyRadioButton.Text" xml:space="preserve">
+    <value>蓝灰色</value>
+  </data>
+  <data name="pinkRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="pinkRadioButton.Text" xml:space="preserve">
+    <value>粉色</value>
+  </data>
+  <data name="greenRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="greenRadioButton.Text" xml:space="preserve">
+    <value>绿色</value>
+  </data>
+  <data name="redRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="redRadioButton.Text" xml:space="preserve">
+    <value>红色</value>
+  </data>
+  <data name="blueRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="blueRadioButton.Text" xml:space="preserve">
+    <value>蓝色</value>
+  </data>
+  <data name="darkModeSwtich.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 37</value>
+  </data>
+  <data name="darkModeSwtich.Text" xml:space="preserve">
+    <value>黑夜模式</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>国王:双冠 作弊器</value>
+  </data>
+</root>
