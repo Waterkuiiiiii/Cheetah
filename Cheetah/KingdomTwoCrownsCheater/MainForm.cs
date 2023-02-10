@@ -232,8 +232,19 @@ namespace KingdomTwoCrownsCheater
                 return;
             }
 
-            procOpenLable1.Text = "Game Found";
-            procOpenLable2.Text = "Game Found";
+            switch (Settings.Default.Language)
+            {
+                case "English":
+                    procOpenLable1.Text = "Game Found";
+                    procOpenLable2.Text = "Game Found";
+                    break;
+                case "Chinese":
+                    procOpenLable1.Text = "游戏已发现";
+                    procOpenLable2.Text = "游戏已发现";
+                    break;
+                default:
+                    break;
+            }
 
             CoinsCount1 = Mem.ReadMemory<int>(CoinsMemAddr1);
             coinsCountLabel1.Text = CoinsCount1.ToString();

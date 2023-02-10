@@ -146,21 +146,465 @@
   <data name="materialLabel1.Text" xml:space="preserve">
     <value>进程：</value>
   </data>
+  <data name="materialLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsSendButton1.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="gemsSendButton1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="gemsCheckBox1.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="gemsCheckBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel2.Text" xml:space="preserve">
+    <value>金币：</value>
+  </data>
+  <data name="materialLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="coinsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 35</value>
+  </data>
+  <data name="coinsCountLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="gemsTextBox1.Hint" xml:space="preserve">
+    <value>宝石数量</value>
+  </data>
+  <data name="gemsTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel3.Text" xml:space="preserve">
+    <value>速度：</value>
+  </data>
+  <data name="materialLabel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="gemsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 107</value>
+  </data>
+  <data name="gemsCountLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="speedLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 171</value>
+  </data>
+  <data name="speedLabel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel11.Text" xml:space="preserve">
+    <value>宝石：</value>
+  </data>
+  <data name="materialLabel11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="coinsTextBox1.Hint" xml:space="preserve">
+    <value>金币数量</value>
+  </data>
+  <data name="coinsTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsSendButton1.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="coinsSendButton1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedSlider1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="speedSlider1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="coinsCheckBox1.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="coinsCheckBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="procOpenLable1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <data name="procOpenLable1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="procOpenLable1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>玩家 1</value>
+  </data>
+  <data name="tabPage1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel8.Text" xml:space="preserve">
+    <value>金币：</value>
+  </data>
+  <data name="materialLabel8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="coinsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 35</value>
+  </data>
+  <data name="coinsCountLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedSlider2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="speedSlider2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel6.Text" xml:space="preserve">
+    <value>速度：</value>
+  </data>
+  <data name="materialLabel6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="gemsCheckBox2.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="gemsCheckBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="speedLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="speedLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 171</value>
+  </data>
+  <data name="speedLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsSendButton2.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="gemsSendButton2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="coinsTextBox2.Hint" xml:space="preserve">
+    <value>金币数量</value>
+  </data>
+  <data name="coinsTextBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
+  </data>
+  <data name="gemsTextBox2.Hint" xml:space="preserve">
+    <value>宝石数量</value>
+  </data>
+  <data name="gemsTextBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsSendButton2.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="coinsSendButton2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gemsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="gemsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 107</value>
+  </data>
+  <data name="gemsCountLabel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="coinsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="coinsCheckBox2.Text" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="coinsCheckBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 29</value>
+  </data>
+  <data name="materialLabel9.Text" xml:space="preserve">
+    <value>宝石：</value>
+  </data>
+  <data name="materialLabel9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="procOpenLable2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <data name="procOpenLable2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="procOpenLable2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 34px, style=Bold</value>
+  </data>
+  <data name="materialLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 41</value>
+  </data>
+  <data name="materialLabel5.Text" xml:space="preserve">
+    <value>进程：</value>
+  </data>
+  <data name="materialLabel5.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>玩家 2</value>
   </data>
+  <data name="tabPage2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel13.Text" xml:space="preserve">
+    <value>技巧</value>
+  </data>
+  <data name="materialLabel13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 162</value>
+  </data>
+  <data name="materialLabel15.Text" xml:space="preserve">
+    <value>如果玩家1的速度无法使用，请尝试重启软件。</value>
+  </data>
+  <data name="materialLabel15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 125</value>
+  </data>
+  <data name="materialLabel14.Text" xml:space="preserve">
+    <value>当你在玩家1中激活速度检查框时，Z键向左，X键停止，C键向右。如果选中玩家2，Del键向左，End键停止，PgDn键向右。</value>
+  </data>
+  <data name="materialLabel14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel10.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="materialLabel10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="aboutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 36</value>
+  </data>
+  <data name="aboutButton.Text" xml:space="preserve">
+    <value>关于我</value>
+  </data>
+  <data name="aboutButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 20px, style=Bold</value>
+  </data>
+  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="materialLabel12.Text" xml:space="preserve">
+    <value>版本：0.0.3</value>
+  </data>
+  <data name="materialLabel12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel7.Text" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="materialLabel7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="langComboBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="materialLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 29</value>
+  </data>
+  <data name="materialLabel4.Text" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="materialLabel4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="blueGreyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 37</value>
+  </data>
+  <data name="blueGreyRadioButton.Text" xml:space="preserve">
+    <value>蓝灰色</value>
+  </data>
+  <data name="blueGreyRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pinkRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="pinkRadioButton.Text" xml:space="preserve">
+    <value>粉色</value>
+  </data>
+  <data name="pinkRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="greenRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="greenRadioButton.Text" xml:space="preserve">
+    <value>绿色</value>
+  </data>
+  <data name="greenRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="redRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="redRadioButton.Text" xml:space="preserve">
+    <value>红色</value>
+  </data>
+  <data name="redRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="blueRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 37</value>
+  </data>
+  <data name="blueRadioButton.Text" xml:space="preserve">
+    <value>蓝色</value>
+  </data>
+  <data name="blueRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="darkModeSwtich.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 37</value>
+  </data>
+  <data name="darkModeSwtich.Text" xml:space="preserve">
+    <value>黑夜模式</value>
+  </data>
+  <data name="darkModeSwtich.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialCard3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>设置</value>
+  </data>
+  <data name="tabPage3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="menuIconList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAm
-        FQAAAk1TRnQBSQFMAgEBAwEAAeABAAHgAQABGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
+        FQAAAk1TRnQBSQFMAgEBAwEAAegBAAHoAQABGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
         AwABGAMAAQEBAAEgBgABJBUAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB2AwAA1IBqAMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
@@ -175,7 +619,7 @@
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/A1sB0AwAA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwGAADUgGgAwAB/wMAAf8DWwHQAwAB/wMAAf8DAAH/AwAB/wMA
-        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wNZAeADAAH/AwAB/wNSAaBvAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAeADAAH/AwAB/wNSAaBvAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wNbAdAMAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0ABcBQAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
@@ -191,18 +635,18 @@
         AwAB/wNWAbBsAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0kBiAwAAxcBHwMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNgAegYAAMY
-        ASADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWQHgA0ABcAMqAUADKgRAAXADWQHgAwAB/wMAAf8DAAH/
-        AwAB/wMAAf8DAAH/AxgBIGgAAxcBHwNcAfMDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        ASADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWgHgA0ABcAMqAUADKgRAAXADWgHgAwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/AxgBIGgAAxcBHwNdAfMDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNdAdwUAANbAdADAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNSAaAYAANM
         AZADAAH/AwAB/wMAAf8DAAH/AwAB/wNSAaADDAEQEAADDAEQA1IBoAMAAf8DAAH/AwAB/wMAAf8DAAH/
         A0wBkGwAAzABSgNaAfIDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWgHyAygBPBQAAzABSgMAAf8DAAH/AwAB/wMAAf8DAAH/
-        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUAHzAxcBHxAAAyoBQAMqAUADWwHQAwAB/wMA
-        Af8DAAH/AwAB/wNZAeADDAEQGAADDAEQA1kB4AMAAf8DAAH/AwAB/wMAAf8DWwHQAyoBQAMqAUBoAAMw
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUQHzAxcBHxAAAyoBQAMqAUADWwHQAwAB/wMA
+        Af8DAAH/AwAB/wNaAeADDAEQGAADDAEQA1oB4AMAAf8DAAH/AwAB/wMAAf8DWwHQAyoBQAMqAUBoAAMw
         AUoDYAHoAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wNbAdADKAE8CwAB/wMAAf8DAAH/A1IBqAQAA0YBfgMAAf8DAAH/AwAB/wMAAf8DAAH/
-        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1UB8gMwAUoEAANbAdgDAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1cB8gMwAUoEAANbAdgDAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/A0ABcCAAA0YBgAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf9wAANJ
         AYgDWAG4A1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQA1UBrAM7
         AWQTAAH/AwAB/wMAAf8DUgGgCAADOwFkA1gBuANbAdADWwHQA1sB0ANbAdADWwHQA1sB0ANbAdADWwHQ
@@ -215,32 +659,32 @@
         Af8DUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNAAXAgAANAAXADAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/eAADFwEfA1wB2QMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB0BwA
         A0kBiAMAAf8DAAH/A2AB6AgAAxcBHwNcAdkDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNb
-        AdAPAAH/AwAB/wMAAf8DRQF8CAADWwHQAwAB/wMAAf8DAAH/AwAB/wNZAeADDAEQGAADDAEQA1kB4AMA
+        AdAPAAH/AwAB/wMAAf8DRQF8CAADWwHQAwAB/wMAAf8DAAH/AwAB/wNaAeADDAEQGAADDAEQA1oB4AMA
         Af8DAAH/AwAB/wMAAf8DWwHQgAADUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wNJAYgYAAMXAR8DAAH/AwAB/wMAAf8IAANSAaADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        AwAB/wMAAf8DAAH/A0kBiAQAAzYBVwMAAf8DAAH/A00B9AwAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/A0kBiAQAAzYBVwMAAf8DAAH/A08B9AwAA0wBkAMAAf8DAAH/AwAB/wMAAf8DAAH/
         A1IBoAMMARAQAAMMARADUgGgAwAB/wMAAf8DAAH/AwAB/wMAAf8DTAGQgAADUwH0AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNbAdAcAANYAbgDAAH/AwAB/wNAAXAEAANgAegDAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1sB0AQAA0kBiAMAAf8DAAH/A1IBoAwA
-        AxgBIAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNZAeADRgGAAyoBQAMqBEABcANZAeADAAH/AwAB/wMA
+        AxgBIAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNaAeADRgGAAyoBQAMqBEABcANaAeADAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DGAEggwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
-        Af8DAAH/HAADKAE8A1UB8gMAAf8DVQGsBwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        AwAB/wMAAf8DAAH/BAADWAG4AwAB/wNQAfMDFwEfDAADDAEQA1kB4AMAAf8DAAH/AwAB/wMAAf8DAAH/
+        Af8DAAH/HAADKAE8A1cB8gMAAf8DVQGsBwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
+        AwAB/wMAAf8DAAH/BAADWAG4AwAB/wNRAfMDFwEfDAADDAEQA1oB4AMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWwHQhwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IAADRgF+AwAB/wNgAegHAAH/AwAB/wMA
-        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DFwEfA1AB8wMAAf8DOwFkEAADWwHQ
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DFwEfA1EB8wMAAf8DOwFkEAADWwHQ
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/A1IBoIMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        A10B3CQAA0ABcQNNAfQDTgGUA00B9AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        A10B3CQAA0ABcQNPAfQDTgGUA08B9AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DYAHoA1IBoANgAegDOwFkFAADTAGQAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A0wBkIAAA1gBuAMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUgGgLAADQAFwA1gBuAMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DUgGgA0ABcCAAA1IBoAMAAf8DAAH/A1YBsAMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DWwHQAwAB/wMAAf8DUgGghAADKAE8A1oB8gMAAf8DAAH/
-        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A2EB5gMXAR8wAAMoATwDVQHyAwAB/wMAAf8DAAH/AwAB/wMA
-        Af8DAAH/AwAB/wMAAf8DUAHzAxcBHygAA0wBkAM6AWAEAAMYASADTAGQA1sB0AMAAf8DAAH/AwAB/wMA
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A2EB5gMXAR8wAAMoATwDVwHyAwAB/wMAAf8DAAH/AwAB/wMA
+        Af8DAAH/AwAB/wMAAf8DUQHzAxcBHygAA0wBkAM6AWAEAAMYASADTAGQA1sB0AMAAf8DAAH/AwAB/wMA
         Af8DWwHQA0wBkAMYASAEAANSAaADTAGQjAADMAFKA1oB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNh
-        AeYDMAFKOAADMAFKA1UB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNQAfMDMAFKQAADKgFAAwAB/wMA
+        AeYDMAFKOAADMAFKA1cB8gMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfMDMAFKQAADKgFAAwAB/wMA
         Af8DAAH/AwAB/6gAAygBPANYAbgDUwH0AwAB/wMAAf8DYAHoA1IBoAMXAR9AAAMoATwDWAG4A2AB6AMA
         Af8DAAH/A2AB6ANSAaADFwEfRAADKgFAAwAB/wMAAf8DAAH/AwAB/4gAAUIBTQE+BwABPgMAASgDAAFg
         AwABGAMAAQEBAAEBBQABIAEBFgAD/wQAAeABAAEHAf8BgwH/BgAB4AEAAQcB/wGDAf8GAAHgAQABBwHy
@@ -253,289 +697,13 @@
         AwAB/wEAAv8BAAL/AYMB/wMACw==
 </value>
   </data>
-  <data name="gemsSendButton1.Text" xml:space="preserve">
-    <value>发送</value>
-  </data>
-  <data name="gemsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="gemsCheckBox1.Text" xml:space="preserve">
-    <value>冻结</value>
-  </data>
-  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="materialLabel2.Text" xml:space="preserve">
-    <value>金币：</value>
-  </data>
-  <data name="coinsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="coinsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 35</value>
-  </data>
-  <data name="gemsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 16px</value>
-  </data>
-  <data name="gemsTextBox1.Hint" xml:space="preserve">
-    <value>宝石数量</value>
-  </data>
-  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="materialLabel3.Text" xml:space="preserve">
-    <value>速度：</value>
-  </data>
-  <data name="gemsCountLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="gemsCountLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 107</value>
-  </data>
-  <data name="speedLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="speedLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 171</value>
-  </data>
-  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="materialLabel11.Text" xml:space="preserve">
-    <value>宝石：</value>
-  </data>
-  <data name="coinsTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 16px</value>
-  </data>
-  <data name="coinsTextBox1.Hint" xml:space="preserve">
-    <value>金币数量</value>
-  </data>
-  <data name="coinsSendButton1.Text" xml:space="preserve">
-    <value>发送</value>
-  </data>
-  <data name="speedSlider1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="coinsCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="coinsCheckBox1.Text" xml:space="preserve">
-    <value>冻结</value>
-  </data>
-  <data name="procOpenLable1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 34px, style=Bold</value>
-  </data>
-  <data name="procOpenLable1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 17</value>
-  </data>
-  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="materialLabel8.Text" xml:space="preserve">
-    <value>金币：</value>
-  </data>
-  <data name="coinsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="coinsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 35</value>
-  </data>
-  <data name="speedSlider2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="materialLabel6.Text" xml:space="preserve">
-    <value>速度：</value>
-  </data>
-  <data name="gemsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="gemsCheckBox2.Text" xml:space="preserve">
-    <value>冻结</value>
-  </data>
-  <data name="speedLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="speedLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 171</value>
-  </data>
-  <data name="gemsSendButton2.Text" xml:space="preserve">
-    <value>发送</value>
-  </data>
-  <data name="coinsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 16px</value>
-  </data>
-  <data name="coinsTextBox2.Hint" xml:space="preserve">
-    <value>金币数量</value>
-  </data>
-  <data name="gemsTextBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 16px</value>
-  </data>
-  <data name="gemsTextBox2.Hint" xml:space="preserve">
-    <value>宝石数量</value>
-  </data>
-  <data name="coinsSendButton2.Text" xml:space="preserve">
-    <value>发送</value>
-  </data>
-  <data name="gemsCountLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="gemsCountLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 107</value>
-  </data>
-  <data name="coinsCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="coinsCheckBox2.Text" xml:space="preserve">
-    <value>冻结</value>
-  </data>
-  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="materialLabel9.Text" xml:space="preserve">
-    <value>宝石：</value>
-  </data>
-  <data name="procOpenLable2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 34px, style=Bold</value>
-  </data>
-  <data name="procOpenLable2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 17</value>
-  </data>
-  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 34px, style=Bold</value>
-  </data>
-  <data name="materialLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 41</value>
-  </data>
-  <data name="materialLabel5.Text" xml:space="preserve">
-    <value>进程：</value>
-  </data>
-  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 29</value>
-  </data>
-  <data name="materialLabel13.Text" xml:space="preserve">
-    <value>技巧</value>
-  </data>
-  <data name="materialLabel15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 14px</value>
-  </data>
-  <data name="materialLabel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 162</value>
-  </data>
-  <data name="materialLabel15.Text" xml:space="preserve">
-    <value>如果玩家1的速度无法使用，请尝试重启软件。</value>
-  </data>
-  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 14px</value>
-  </data>
-  <data name="materialLabel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 125</value>
-  </data>
-  <data name="materialLabel14.Text" xml:space="preserve">
-    <value>当你在玩家1中激活速度检查框时，Z键向左，X键停止，C键向右。如果选中玩家2，Del键向左，End键停止，PgDn键向右。</value>
-  </data>
-  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 29</value>
-  </data>
-  <data name="materialLabel10.Text" xml:space="preserve">
-    <value>关于</value>
-  </data>
-  <data name="aboutButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 36</value>
-  </data>
-  <data name="aboutButton.Text" xml:space="preserve">
-    <value>关于我</value>
-  </data>
-  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto Medium, 20px, style=Bold</value>
-  </data>
-  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 24</value>
-  </data>
-  <data name="materialLabel12.Text" xml:space="preserve">
-    <value>版本：0.0.3</value>
-  </data>
-  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 29</value>
-  </data>
-  <data name="materialLabel7.Text" xml:space="preserve">
-    <value>语言</value>
-  </data>
-  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="materialLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 29</value>
-  </data>
-  <data name="materialLabel4.Text" xml:space="preserve">
-    <value>主题</value>
-  </data>
-  <data name="blueGreyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 37</value>
-  </data>
-  <data name="blueGreyRadioButton.Text" xml:space="preserve">
-    <value>蓝灰色</value>
-  </data>
-  <data name="pinkRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="pinkRadioButton.Text" xml:space="preserve">
-    <value>粉色</value>
-  </data>
-  <data name="greenRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="greenRadioButton.Text" xml:space="preserve">
-    <value>绿色</value>
-  </data>
-  <data name="redRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="redRadioButton.Text" xml:space="preserve">
-    <value>红色</value>
-  </data>
-  <data name="blueRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
-  </data>
-  <data name="blueRadioButton.Text" xml:space="preserve">
-    <value>蓝色</value>
-  </data>
-  <data name="darkModeSwtich.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 37</value>
-  </data>
-  <data name="darkModeSwtich.Text" xml:space="preserve">
-    <value>黑夜模式</value>
+  <data name="materialTabControl1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>国王:双冠 作弊器</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
